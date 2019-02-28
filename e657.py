@@ -1,5 +1,5 @@
+import json as pickle
 import os
-import pickle
 import sys
 from array import array
 M = 10**9+7
@@ -11,7 +11,7 @@ max_alpha = 10**7
 def myload(basename):
     """docstring for myload"""
     return pickle.load(
-        open(os.getenv('HOME') + "/tmp/" + basename + ".pickle", "rb"))
+        open(os.getenv('HOME') + "/tmp/" + basename + ".pickle", "rt"))
 
 
 powM2 = myload('powM2')
