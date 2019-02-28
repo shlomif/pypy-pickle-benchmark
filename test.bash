@@ -9,6 +9,7 @@
 set -e -x
 mkdir -p ~/tmp
 pypy3 e657_cache.py
-time python3 e657.py 2 1000
-time pypy3 e657.py 2 1000
-time pypy3 e657.py 2 1000
+args="e657.py 2 2000"
+time python3 $args
+time pypy3 $args
+time pypy3 $args
